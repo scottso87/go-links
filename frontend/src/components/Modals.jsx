@@ -144,12 +144,12 @@ const DeletionModal = connect(
   const [confirmed, setConfirmed] = useState(false);
 
   let link = linksById.get(linkId);
-  link = link.set('shortpath', `go/${link.get('shortpath')}`);
+  link = link.set('shortpath', `rfg/${link.get('shortpath')}`);
 
   const message = (
       <div>
         <p>
-          Deleting a go link will delete the go link for everyone in your organization. No one on your
+          Deleting a rfg link will delete the rfg link for everyone in your organization. No one on your
           team will be able to use <span style={{fontWeight:'bold'}}>{link.get('shortpath')}</span> until
           it's re-created.
         </p>
@@ -199,7 +199,7 @@ const InitTransferModal = connect(
   }
 
   let link = linksById.get(linkId);
-  link = link.set('shortpath', `go/${link.get('shortpath')}`);
+  link = link.set('shortpath', `rfg/${link.get('shortpath')}`);
 
   const onCopy = () => {
     setJustCopied(true);
@@ -271,7 +271,7 @@ const CompleteTransferModal = connect(
   const message = (
       <div style={{marginBottom: '10px'}}>
         Would you like to take ownership of
-        of <span style={{fontWeight:'bold'}}>go/{link.get('shortpath')}</span>?
+        of <span style={{fontWeight:'bold'}}>rfg/{link.get('shortpath')}</span>?
       </div>
   );
 

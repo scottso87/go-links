@@ -33,8 +33,9 @@ const Butterbar = connect(
     `;
 
     const OPEN_SOURCING_MESSAGE = `
-        We've open-sourced the core Trotto app! Contribute code and suggest
-        improvements <a href="https://github.com/trotto/go-links" target="_blank">here</a>.
+        <a href="https://chrome.google.com/webstore/detail/hdmgihbhfhfolokjlkgkihgpnondgmmm?authuser=0&hl=en" target="_blank">
+        Install the Chrome extension</a> and simply type <span style="color:black">rfg/[keyword]</span> instead
+        of <span style="color:black">rfg.link/[keyword]</span>
     `;
 
     const NOTIFICATION_ID_TO_HTML = {

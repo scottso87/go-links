@@ -129,7 +129,7 @@ export class LinkForm extends React.Component {
               <div style={{width: '100%', display: 'flex', alignItems: 'center'}}>
                  <div style={{paddingRight: '5px'}}>
                    <div>
-                     go/
+                     rfg/
                    </div>
                  </div>
                  <input

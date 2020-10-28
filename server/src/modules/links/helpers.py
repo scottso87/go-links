@@ -128,7 +128,7 @@ def upsert_short_link(organization, owner, shortpath, destination, updated_link_
     existing_link, _ = get_shortlink(organization, shortpath)
 
     if existing_link:
-      raise LinkCreationException('That go link already exists. go/%s points to %s'
+      raise LinkCreationException('That go link already exists. rfg/%s points to %s'
                                   % (shortpath, existing_link.destination_url))
 
   # Note: urlparse('128.90.0.1:8080/start').scheme returns '128.90.0.1'. Hence the additional checking.

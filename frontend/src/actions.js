@@ -125,16 +125,16 @@ export function receiveSaveResult(responseJson) {
 
       dispatch(setLinkCreatedOnThisPageload(responseJson));
 
-      var host = 'http://go';
+      var host = 'http://rfg';
 
       if (!getState().core.get('goSupportedInCurrentSession')) {
-        host = host.replace('http://go', getServiceBaseUrl());
+        host = host.replace('http://rfg', getServiceBaseUrl());
       }
 
       dispatch(setLinkCreationMessage(
           'good_news',
           'Success! New go link created:',
-          'http://go/' + responseJson.shortpath
+          'http://rfg/' + responseJson.shortpath
       ));
     }
   }
