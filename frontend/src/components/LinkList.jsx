@@ -308,7 +308,7 @@ export class LinksTable extends React.Component {
       var data = List();
     } else {
       var data = this.props.links.map(
-          link => link.update('shortpath', shortpath => 'go' + '/' + shortpath));
+          link => link.update('shortpath', shortpath => 'rfg' + '/' + shortpath));
     }
 
     // Note: For the moment, the default install doesn't track visit counts.
